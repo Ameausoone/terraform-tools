@@ -1,0 +1,21 @@
+name: 'Terraform toolset'
+description: 'Github Action with Terraform tools: terraform, jq, yq, go'
+author: 'Antoine Meausoone'
+branding:
+  icon: 'command'
+  color: 'green'
+inputs:
+  command:
+    description: 'command to run'
+    required: true
+  terraform:
+    description: 'terraform version e.g. 0.12.16'
+  vault:
+    description: 'vault version e.g. 1.2.4'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.command }}
+    - ${{ inputs.terraform }}
+    - ${{ inputs.vault }}
