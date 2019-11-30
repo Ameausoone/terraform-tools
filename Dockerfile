@@ -5,7 +5,7 @@ COPY LICENSE README.md /
 RUN apk add --update --no-cache \
          curl \
          git \
-         openssl-client
+         openssh-client
 
 COPY src/ /
 RUN /install.sh
