@@ -3,7 +3,9 @@ FROM alpine:3.10
 COPY LICENSE README.md /
 
 RUN apk add --update --no-cache \
-         curl
+         curl \
+         git \
+         openssl-client
 
 COPY src/ /
 RUN /install.sh

@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 set -o errexit
 
-bash -c "${command}"
+sh -c "${command}"
