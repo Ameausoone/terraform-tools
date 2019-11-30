@@ -1,17 +1,17 @@
-#name: CONTAINER
-#
-#on: [push]
-#
-#jobs:
-#  test:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - uses: actions/checkout@v1
-#      - name: Run in container
-#        uses: docker://ameausoone/terraform-tools:latest
-#        with:
-#          entrypoint: /run.sh
-#        env:
-#          command: |
-#            terraform -version
-#            vault -version
+name: CONTAINER
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run in container
+        uses: docker://ameausoone/terraform-tools:feat-first
+        with:
+          entrypoint: /run.sh
+        env:
+          command: |
+            terraform -version
+            vault -version
