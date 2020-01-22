@@ -12,3 +12,4 @@ jobs:
         with:
           command: |
             terraform -version
+            vault -version

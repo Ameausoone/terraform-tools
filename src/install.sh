@@ -21,7 +21,7 @@ terraform -version
 
 VAULT=1.2.4
 echo "downloading vault ${VAULT}"
-curl --fail https://releases.hashicorp.com/vault/${VAULT}/vault_${VAULT}_linux_amd64.zip > vault_${VAULT}_linux_amd64.zip && \
+curl -sL --fail https://releases.hashicorp.com/vault/${VAULT}/vault_${VAULT}_linux_amd64.zip > vault_${VAULT}_linux_amd64.zip && \
   unzip vault_${VAULT}_linux_amd64.zip -d /bin && \
   rm -f vault_${VAULT}_linux_amd64.zip
 vault -version
