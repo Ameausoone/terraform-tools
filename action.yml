@@ -1,5 +1,5 @@
 name: 'Terraform toolset'
-description: 'Github Action with Terraform tools: terraform, jq, yq, go'
+description: 'Github Action with Terraform tools: terraform, vault, jq, yq'
 author: 'Antoine Meausoone'
 branding:
   icon: 'command'
