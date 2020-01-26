@@ -1,4 +1,4 @@
-name: CONTAINER
+name: Container
 
 on: [push]
 
