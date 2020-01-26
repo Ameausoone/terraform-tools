@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Run in container
-        uses: docker://ameausoone/terraform-tools:feat-first
+        uses: docker://ameausoone/terraform-tools:latest
         with:
           entrypoint: /run.sh
         env:
